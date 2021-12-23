@@ -1,0 +1,204 @@
+html {
+    max-width: 1920px;
+    margin: auto;
+    font-size: 14px;
+    font-family: Roboto;
+}
+
+.header {
+    border-bottom: 1px solid #000000;
+    padding-top: 37px;
+    margin-bottom: 58px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 43px;
+}
+
+.header__logo {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo__image {
+    border-right: 1px solid #000000;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.logo__text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #92B1BA;
+    max-width: 170px;
+}
+
+.headerAuth {
+    display: flex;
+    align-items: center;
+}
+
+.headerAuth__text {
+    border-right: 1px solid #000000;
+    margin-right: 17px;
+    padding-right: 17px;
+}
+
+.headerAuth__image {
+    flex-grow: 0;
+}
+
+.header__menu {
+    margin-bottom: 20px;
+}
+
+.topMenu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.topmenu__element {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+}
+
+.topmenu__element.locked {
+    padding-left: 24px;
+}
+
+.topmenu__element.locked::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 14px;
+    height: 15px;
+    background: url(/img/emojione-monotone_locked.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mainContainer {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 0 20px;
+}
+
+.mainContent {
+    flex-grow: 1;
+    margin-right: 60px;
+    max-width: 900px;
+}
+
+.auth {
+    flex-shrink: 0;
+    padding: 52px 20px;
+    width: 240px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+.galleryPreview {
+    display: flex;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.galleryPreview__image {
+    margin-right: 50px;
+}
+
+.textBlock__title {
+    font-size: 24px;
+    margin-bottom: 23px;
+}
+
+.galleriesPreview {
+    display: flex;
+}
+
+.galleryPreview.galleryPreview--small {
+    width: 250px;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-right: 1px solid #000000;
+    border-bottom: none;
+    padding-right: 25px;
+    margin-right: 25px;
+    margin-bottom: 0;
+}
+
+.galleryPreview.galleryPreview--small:nth-child(2) {
+    width: 300px;
+}
+
+.galleryPreview.galleryPreview--small:nth-child(3) {
+    border: none;
+}
+
+.galleryPreview--small .galleryPreview__image {
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.galleryPreview--small .galleryPreview__imageHolder {
+    width: 100%;
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.locked .textBlock__title {
+    position: relative;
+    padding-right: 25px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.locked .textBlock__title::after {
+    content: url("/img/emojione-monotone_locked.png");
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.galleryPreview--small .textBlock__text {
+    font-size: 12px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 71px 0 78px;
+}
+
+.footer__content {
+    margin-bottom: 40px;
+}
+
+.footer__link {
+    margin-right: 80px;
+    color: #000;
+    text-decoration: none;
+}
