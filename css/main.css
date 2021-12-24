@@ -37,10 +37,9 @@ html {
 }
 
 .logo__text {
-    font-size: 24px;
+    font-size: 48px;
     font-weight: 600;
     color: #92B1BA;
-    max-width: 170px;
 }
 
 .headerAuth {
@@ -131,6 +130,11 @@ html {
 
 .textBlock__text {
     line-height: 17px;
+}
+
+.textBlock__text.narrow {
+    max-width: 655px;
+    margin-left: auto;
 }
 
 .textBlock__title {
@@ -269,4 +273,74 @@ html {
     margin-bottom: 25px;
     border-bottom: 1px solid;
     padding-bottom: 35px;
+}
+
+.projectData__title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.projectData__subtitle {
+    margin-bottom: 26px;
+}
+
+.slider {
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+    position: relative;
+}
+
+.slider__photo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.slider__text {
+    font-size: 10px;
+}
+
+#navs {
+    position: absolute;
+    right: 0;
+    bottom: 55px;
+    z-index: 20;
+    width: 55px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.projectText {
+    padding-bottom: 38px;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    border-bottom: 1px solid;
+}
+
+.gallery__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.galleryElements {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.galleryElement {
+    width: 400px;
+}
+
+.galleryElement__image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.galleryElements__element {
+    margin-bottom: 60px;
 }
