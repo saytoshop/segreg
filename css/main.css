@@ -344,3 +344,7 @@ html {
 .galleryElements__element {
     margin-bottom: 60px;
 }
+
+.header__mobileMenu {
+    display: none;
+}
