@@ -5,10 +5,18 @@ html {
     font-family: Roboto;
 }
 
+body {
+    margin: 0;
+}
+
 .header {
     border-bottom: 1px solid #000000;
     padding-top: 37px;
     margin-bottom: 58px;
+}
+
+.hamburger {
+    display: none;
 }
 
 .container {
@@ -346,5 +354,9 @@ html {
 }
 
 .header__mobileMenu {
+    display: none;
+}
+
+.footer__menu {
     display: none;
 }

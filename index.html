@@ -10,19 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/hamburgers.css">
+
+
+
     <title>Document</title>
 </head>
 
 <body>
-    <header class="header full">
-        <div class="container">
-            <div class="header__top">
+
+    <header class="header full" id="header">
+        <div class="container" :class="{'activeMenu': menuActive}">
+            <div class="header__top" id="headerTop">
                 <a href="" class="header__logo logo">
                     <img src="/img/logo.png" alt="" class="logo__image">
                     <div class="logo__text">
                         Сегмент регион
                     </div>
                 </a>
+
+                <button class="hamburger hamburger--spin" type="button" @click="toggle()">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </button>
                 <div class="header__auth headerAuth">
                     <div class="headerAuth__text">
                         Вбейте пароль, что бы смотреть больше
@@ -33,7 +44,7 @@
 
             </div>
 
-            <div class="header__menu topMenu">
+            <div class="header__menu topMenu" :style="{height: menuHeight}">
                 <a href="" class="topmenu__element">Описание деятельности</a>
                 <a href="" class="topmenu__element locked">Проекты</a>
                 <a href="" class="topmenu__element locked">Услуги</a>
@@ -42,7 +53,7 @@
         </div>
     </header>
 
-    <div class="mainContainer container">
+    <div class="mainContainer container" id="main">
         <div class="mainContent">
             <div class="galleryPreview">
                 <img src="/img/project1.jpg" alt="" class="galleryPreview__image">
@@ -66,7 +77,7 @@
 
 
                 <div class="galleryPreview galleryPreview--small locked">
-                    <div style="background-image: url('/img/pr_small.jpg');" alt="" class="galleryPreview__imageHolder">
+                    <div style="background-image: url( '/img/pr_small.jpg');" alt="" class="galleryPreview__imageHolder">
                     </div>
                     <div class="galleryPreview__textBlock textBlock">
                         <a href="#" class="textBlock__title">
@@ -79,7 +90,7 @@
                 </div>
 
                 <div class="galleryPreview galleryPreview--small locked">
-                    <div style="background-image: url('/img/pr_small.jpg');" alt="" class="galleryPreview__imageHolder">
+                    <div style="background-image: url( '/img/pr_small.jpg');" alt="" class="galleryPreview__imageHolder">
                     </div>
                     <div class="galleryPreview__textBlock textBlock">
                         <a href="#" class="textBlock__title">
@@ -92,12 +103,12 @@
                 </div>
 
                 <div class="galleryPreview galleryPreview--small locked">
-                    <div style="background-image: url('/img/pr_small.jpg');" alt="" class="galleryPreview__imageHolder">
+                    <div style="background-image: url( '/img/pr_small.jpg');" alt="" class="galleryPreview__imageHolder">
                     </div>
-                    <div class="galleryPreview__textBlock textBlock">
+                    <div class='galleryPreview__textBlock textBlock'>
                         <a href="#" class="textBlock__title">
                             5 most influential visualizations of
-                        </a>
+                               </a>
                         <div class="textBlock__text">
                             Data visualization has deep roots—going back to early map-making and visual depiction
                         </div>
@@ -107,9 +118,9 @@
 
             </div>
         </div>
-        <div class="auth">
+        <div class="auth" id="authForm">
             <form action="">
-                <label for="login" class="auth__label">
+                <label for=" login" class="auth__label">
                     Логин
                 </label>
                 <input type="text" id="login">
@@ -131,7 +142,14 @@
 
     </div>
     <footer class="footer container">
+
         <div class="footer__content">
+            <div class="footer__menu footerMenu">
+                <a href="" class="footerMenu__element">Описание деятельности</a>
+                <a href="" class="footerMenu__element locked">Проекты</a>
+                <a href="" class="footerMenu__element locked">Услуги</a>
+                <a href="" class="footerMenu__element locked">Партнеры</a>
+            </div>
             <a href="mailto:info@segment.ru" class="footer__link">info@segment.ru</a>
             <a href="tel:+74959975676" class="footer__link">+7 495 997 56 76</a>
             <span>Москва, Столярный переулок, 3к12</span>
@@ -141,6 +159,10 @@
 
         </div>
     </footer>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/vue.js"></script>
+    <script src="/js/main.js"></script>
+
 </body>
 
 </html>
