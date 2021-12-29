@@ -8,9 +8,13 @@ var app = new Vue({
     },
     computed: {
         menuHeight() {
-            h = -55 + document.documentElement.clientHeight - document.getElementById('authForm').offsetHeight - document.getElementById('headerTop').offsetHeight;
-            console.log(h);
-            return h + 'px';
+            if (this.menuActive) {
+                h = -55 + document.documentElement.clientHeight - document.getElementById('authForm').offsetHeight - document.getElementById('headerTop').offsetHeight;
+                console.log(h);
+                return h + 'px';
+            } else {
+                return 'auto';
+            }
 
         }
 
