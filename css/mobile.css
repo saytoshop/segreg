@@ -60,6 +60,7 @@
     }
     .mainContainer {
         flex-direction: column;
+        padding-top: 100px;
     }
     .mainContent {
         margin-right: auto;
